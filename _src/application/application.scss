@@ -1,0 +1,168 @@
+@import './_application_variables';
+@import './_gridism';
+@import '../client/_client_variables';
+@import '../../node_modules/hamburgers/_sass/hamburgers/_base';
+@import '../../node_modules/hamburgers/_sass/hamburgers/types/_squeeze';
+@import '../../node_modules/primer-tooltips/build/build';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $app-gray;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+#content_editor {
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  img {
+    max-width: 100%;
+  }
+  ul {
+    padding-left: 40px;
+  }
+}
+
+.page {
+  background-color: #fff;
+  padding: 20px 30px;
+  position: relative;
+  margin-bottom: 10rem;
+
+  &:before {
+    content: attr(data-title);
+    position: absolute;
+    background-color: $brand-three;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1rem;
+    top: -40px;
+    color: #fff;
+  }
+
+}
+
+.page-list {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(black, 0.5);
+  z-index: 100;
+
+  button {
+    outline: none;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1;
+    .hamburger-box {
+      padding-left: 1em;
+      margin-right: 2em;
+    }
+  }
+
+  #copyCSS {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    background-color: $brand;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: darken($brand, 20%);
+    }
+
+  }
+
+}
+
+#navigation {
+  position: absolute;
+  top: 52px;
+  transform: translateX(calc(-100% - 1px));
+  transition: all 150ms ease-in-out;
+  background-color: #fff;
+  font-size: 0.9em;
+  min-width: 250px;
+  max-width: 275px;
+  overflow: scroll;
+  max-height: calc(100vh - 52px);
+  box-shadow: 5px 5px 5px rgba(black, 0);
+
+  ul {
+    list-style-type: none;
+  }
+
+  li:first-child a {
+    border-top: 1px solid #ccc;
+  }
+
+  li:last-child a {
+    border-bottom: 0;
+  }
+
+  a {
+    display: block;
+    padding: 0.5em 2em;
+    color: $brand;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      background-color: $brand;
+      color: #fff;
+    }
+
+  }
+  
+  .is-active + & {
+    transform: translateX(0%);
+    box-shadow: 5px 5px 5px rgba(black, 0.2);
+  }
+
+}
+
+.copyHTML {
+  position: absolute;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  top: -30px;
+  right: 1rem;
+  padding: 0.5em;
+  line-height: 1;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: $brand;
+  background-image: none;
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background-color: darken(#fff, 10%);
+  }
+
+}
+
+@media screen and (max-width: 735px) {
+  .copyHTML {
+    display: none;
+  }
+}
