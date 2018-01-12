@@ -1,9 +1,9 @@
 // ==============================
 // CLIENT BRAND COLORS
 // ==============================
-$brand: #ed4c06;          // Red-Orange
-$brand-two: #42b0d8;      // Red
-$brand-three: #33ab40;    // Light Green
+$brand: #8064A9;         // Purple
+$brand-two: $brand;      // Purple
+$brand-three: $brand;    // Purple
 
 
 // ==============================
@@ -12,7 +12,7 @@ $brand-three: #33ab40;    // Light Green
 $base-text-color: #2d3943;
 $base-heading-color: #2d3943;
 $base-link-color: $brand-two;
-$base-font-family: 'Source Sans Pro';
+$base-font-family: 'Roboto';
 
 // =================================
 // THEME BUILDER ADVANCED TYPOGRAPHY
