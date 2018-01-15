@@ -1,10 +1,10 @@
 .purple-about-us {
-  background-image: url(../img/about-us-bg.jpg);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/588373_original.jpg?1516036478);
   background-size: cover;
   background-position: bottom;
-  min-height: 1115px;
+  min-height: 900px;
   @media screen and (max-width: 735px) {
-    min-height: 800px;
+    min-height: 700px;
   }
   
   .purple-about-us-container {
@@ -37,11 +37,10 @@
       position: absolute;
       top: 65px;
       left: 40px;
-      color: $brand;
+      color: transparentize($brand, 0.8);
       font-weight: bold;
       font-size: 20em !important;
       line-height: 1 !important;
-      opacity: 0.15;
       @media screen and (max-width: 735px) {
         font-size: 10em !important;
         top: 25px;

@@ -6,11 +6,18 @@
     text-align: left;
     margin-bottom: 2em;
   }
+  @media print {
+    margin-top: -0.5in !important;
+    margin-bottom: 3em !important;
+  }
   
   img {
     max-width: 150px !important;
     @media screen and (max-width: 735px) {
       max-width: 85px !important;
+    }
+    @media print {
+      max-width: 1in !important;
     }
   }
 

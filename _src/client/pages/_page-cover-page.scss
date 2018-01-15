@@ -6,6 +6,11 @@
     flex: 1;
     max-width: 25%;
     min-width: 125px;
+    @media print {
+      width: 100%;
+      max-width: 2in;
+      float: left;
+    }
   }
 
   .purple-cover-logo-container {
@@ -27,11 +32,15 @@
     @media screen and (max-width: 735px) {
       margin-bottom: 0em !important;
     }
+    @media print {
+      margin-bottom: 10em !important;
+    }
 
     h1 {
       #content_editor &,
       .pdf-page-content & {
-        font-size: $paragraph-font-size;
+        color: #fff !important;
+        font-size: $paragraph-font-size !important;
       }
     }
 
@@ -39,6 +48,18 @@
 
   .purple-cover-boilerplate {
     margin-bottom: 2em !important;
+    font-size: 0.8em !important;
+    line-height: 1.4 !important;
+    * {
+      #content_editor &,
+      .pdf-page-content & {
+        font-size: 0.9em !important;
+        line-height: 1.4 !important;
+      }
+    }
+    @media print {
+      margin-bottom: 0 !important;
+    }
   }
 
   .purple-cover-page-image-container {
@@ -49,7 +70,7 @@
     }
 
     div {
-      background-image: url(../img/cover-bg.jpg);
+      background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/588375_original.jpg?1516036478);
       background-size: cover;
       background-position: bottom;
       position: absolute;
@@ -57,6 +78,12 @@
       left: 30px;
       right: -30px;
       bottom: -20px;
+      @media print {
+        left: 2.5in;
+        top: -1in;
+        bottom: 0;
+        min-height: 12in;
+      }
     }
 
   }
