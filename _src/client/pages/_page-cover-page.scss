@@ -1,0 +1,65 @@
+.purple-cover-page {
+  text-align: right;
+  display: flex;
+
+  .purple-cover-page-content {
+    flex: 1;
+    max-width: 25%;
+    min-width: 125px;
+  }
+
+  .purple-cover-logo-container {
+    margin-top: 4em !important;
+    margin-bottom: 6em !important;
+    @media screen and (max-width: 735px) {
+      margin-top: 0em !important;
+      margin-bottom: 0em !important;
+    }
+
+    img {
+      max-width: 110px !important;
+    }
+
+  }
+
+  .purple-cover-meta-container {
+    margin-bottom: 12em !important;
+    @media screen and (max-width: 735px) {
+      margin-bottom: 0em !important;
+    }
+
+    h1 {
+      #content_editor &,
+      .pdf-page-content & {
+        font-size: $paragraph-font-size;
+      }
+    }
+
+  }
+
+  .purple-cover-boilerplate {
+    margin-bottom: 2em !important;
+  }
+
+  .purple-cover-page-image-container {
+    flex: 1;
+    position: relative;
+    @media screen and (max-width: 735px) {
+      min-height: auto;
+    }
+
+    div {
+      background-image: url(../img/cover-bg.jpg);
+      background-size: cover;
+      background-position: bottom;
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      right: -30px;
+      bottom: -20px;
+    }
+
+  }
+
+}
+

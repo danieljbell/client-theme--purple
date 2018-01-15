@@ -54,7 +54,10 @@
   margin: $heading-six-margin;
 }
 
-#content_editor p {
+#content_editor p,
+#content_editor ul,
+#content_editor ol,
+#content_editor li {
   color: $paragraph-text-color;
   font-family: $paragraph-font-family;
   font-size: $paragraph-font-size;
@@ -67,6 +70,11 @@
   color: $base-link-color;
 }
 
+// #content_editor ul,
+// #content_editor ol {
+//   margin-left: 40px;
+// }
+
 #content_editor table {
   width: 100%;
   border-spacing: 0;
@@ -78,6 +86,7 @@
   th,
   td {
     padding: $table-padding;
+    font-size: $paragraph-font-size;
   }
 
   th {

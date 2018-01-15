@@ -10,7 +10,7 @@ $brand-three: $brand;    // Purple
 // THEME BUILDER BASIC TYPOGRAPHY
 // ==============================
 $base-text-color: #2d3943;
-$base-heading-color: #2d3943;
+$base-heading-color: $brand;
 $base-link-color: $brand-two;
 $base-font-family: 'Roboto';
 
@@ -75,10 +75,10 @@ $heading-six-margin: 0 0 4px 0;
 // PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-family: $base-font-family;
-$paragraph-font-size: 18px;
-$paragraph-line-height: 24px;
+$paragraph-font-size: 14px;
+$paragraph-line-height: 20px;
 $paragraph-font-weight: 300;
-$paragraph-margin: 0 0 20px 0;
+$paragraph-margin: 0 0 28px 0;
 
 
 // LINK
@@ -88,7 +88,7 @@ $link-text-color: $base-link-color;
 // TABLES
 $table-heading-background: $brand;
 $table-heading-font: #fff;
-$table-background-color: #f0f0f0;
+$table-background-color: transparent;
 $table-border-color: #ccc;
-$table-border-size: 1px;
-$table-padding: 10px 10px 10px 10px;
+$table-border-size: 0px;
+$table-padding: 10px 15px 10px 15px;

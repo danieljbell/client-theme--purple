@@ -5,3 +5,14 @@
 GITHUB REPO: https://github.com/danieljbell/client-theme-template
 =================================================================
 */
+
+@import './modules/_full-pages';
+@import './modules/_logo-header';
+@import './modules/_tables';
+
+@import './pages/_page-cover-page';
+@import './pages/_page-about-us';
+@import './pages/_page-introduction';
+
+@import './_utilities';
+@import './_overrides';
