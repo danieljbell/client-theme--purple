@@ -20,6 +20,9 @@
       margin-right: 0;
       padding: 2em;
     }
+    @media print {
+      margin-left: 1in;
+    }
     
     #content_editor & *,
     .pdf-page-content & * {
